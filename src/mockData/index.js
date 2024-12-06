@@ -260,9 +260,18 @@ const USER_PERFORMANCE = [
   },
 ];
 
-module.exports = {
-  USER_MAIN_DATA,
-  USER_ACTIVITY,
-  USER_AVERAGE_SESSIONS,
-  USER_PERFORMANCE,
+const getUserMainData = (userId) =>
+  USER_MAIN_DATA.find((user) => user.id === Number(userId));
+const getUserActivity = (userId) =>
+  USER_ACTIVITY.find((activity) => activity.userId === Number(userId));
+const getUserAverageSessions = (userId) =>
+  USER_AVERAGE_SESSIONS.find((session) => session.userId === Number(userId));
+const getUserPerformance = (userId) =>
+  USER_PERFORMANCE.find((performance) => performance.userId === Number(userId));
+
+export {
+  getUserMainData,
+  getUserActivity,
+  getUserAverageSessions,
+  getUserPerformance,
 };
