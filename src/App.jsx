@@ -1,11 +1,19 @@
 import { Outlet } from "react-router-dom";
 import styled from "styled-components";
+
 import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Sidebar from "./components/SideBar";
 
 const Main = styled.main`
-  margin: 0 auto;
-  max-width: 1024px;
+  display: flex;
+  overflow: hidden;
+  height: 100%;
+`;
+
+const Wrapper = styled.div`
+  flex: 1 1 100%;
+  overflow: auto;
+  width: 100%;
 `;
 
 function App() {
@@ -13,9 +21,11 @@ function App() {
     <>
       <Header />
       <Main>
-        <Outlet />
+        <Sidebar />
+        <Wrapper>
+          <Outlet />
+        </Wrapper>
       </Main>
-      <Footer />
     </>
   );
 }
