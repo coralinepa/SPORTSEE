@@ -9,7 +9,7 @@ const Flex = styled.div`
   flex-direction: row;
   gap: 20px;
 `;
-const StyledUser = styled.p`
+const StyledUser = styled.div`
   color: #fff;
 `;
 
