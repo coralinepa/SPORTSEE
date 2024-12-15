@@ -53,7 +53,7 @@ function Sidebar() {
             <img src={LogoYoga} alt="Yoga" />
           </ListItem>
           <ListItem>
-            <img src={LogoSwim} alt="Swim" />
+            <img src={LogoSwim} alt="Swim" width={36} />
           </ListItem>
           <ListItem>
             <img src={LogoCycle} alt="Cycle" />

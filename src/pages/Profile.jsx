@@ -20,6 +20,9 @@ import NotFound from "./NotFound";
 
 const Root = styled.div`
   margin: 110px;
+  @media (max-width: 1300px) {
+    margin: 60px;
+  }
 `;
 
 const Header = styled.header`
@@ -94,7 +97,8 @@ const Aside = styled.aside`
   gap: 39px;
   @media (max-width: 1300px) {
     flex-direction: row;
-    gap: 24px;
+    gap: 5px;
+    flex-wrap: wrap;
   }
 `;
 
@@ -127,8 +131,6 @@ function transformSessionData(data) {
 function transformPerformanceData(data) {
   return Object.values(data.kind).map((kind) => {
     const { value = 0 } = data?.data.find((item) => item.kind === kind) || {};
-
-    console.log(kind);
 
     return {
       kind,

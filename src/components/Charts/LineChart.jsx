@@ -32,7 +32,7 @@ function TooltipContent({ payload }) {
         color: "#000",
         backgroundColor: "#FFF",
         padding: "5px",
-        borderRadius: "5px",
+        fontSize: "8px",
       }}
     >
       <p>{`${sessionLength} min`}</p>
@@ -41,7 +41,7 @@ function TooltipContent({ payload }) {
 }
 
 TooltipContent.propTypes = {
-  payload: PropTypes.string,
+  payload: PropTypes.array,
 };
 
 function LineChart({ data }) {

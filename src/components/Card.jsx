@@ -10,6 +10,12 @@ const CardContainer = styled.div`
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
   padding: 32px;
   gap: 30px;
+  @media (max-width: 1300px) {
+    gap: 20px;
+    flex: 0 1 24.5%;
+    padding: 8px 14px;
+    gap: 7px;
+  }
 `;
 
 const CardContent = styled.div`

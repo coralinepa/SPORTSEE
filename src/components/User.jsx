@@ -15,8 +15,8 @@ const StyledUser = styled.p`
 
 const Avatar = styled.div`
   background-color: ${(props) => props.$bgColor};
-  width: 30px;
   height: 30px;
+  padding: 5px;
   border-radius: 5px;
   display: flex;
   justify-content: center;
@@ -32,10 +32,10 @@ function User() {
     <StyledUser>
       <Flex>
         <Avatar $bgColor="#ff0200">
-          <UserLink to={`profile/12`}>K</UserLink>
+          <UserLink to={`profile/12`}>Karl</UserLink>
         </Avatar>
         <Avatar $bgColor="#282D30">
-          <UserLink to={`profile/18`}>C</UserLink>
+          <UserLink to={`profile/18`}>Cécilia</UserLink>
         </Avatar>
       </Flex>
     </StyledUser>
